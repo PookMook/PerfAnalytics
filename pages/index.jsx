@@ -25,9 +25,11 @@ export default function EntryPoint() {
       </ul>
       <h2>Data below</h2>
       {error ? (
-        <p>Error: {error}</p>
+        <p>Error: {error.toString()}</p>
       ) : (
-        data.data.allMetrics.data.map((m) => <Metric {...m} key={m.id} />)
+        data.data.allMetrics.data
+          .reverse()
+          .map((m) => <Metric {...m} key={m.id} />)
       )}
     </>
   );
