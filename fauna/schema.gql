@@ -1,0 +1,14 @@
+type Metric {
+    id:ID!
+    name:String!
+    duration:Int!
+    startTime:Int
+    source:String!
+    tags:[String!]!
+}
+
+type Query {
+    allMetrics: [Metric!]!
+    metricsByTags(tags:[String!]!): [Metric!]!
+    metricById(id:ID!): Metric
+}

@@ -1,0 +1,29 @@
+{
+  "name": "perfanalytics",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next -- -p 3002",
+    "build": "next build",
+    "start": "next start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PookMook/PerfAnalytics.git"
+  },
+  "author": "Arthur Juchereau",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PookMook/PerfAnalytics/issues"
+  },
+  "homepage": "https://github.com/PookMook/PerfAnalytics#readme",
+  "dependencies": {
+    "next": "^9.4.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "styled-components": "^5.1.0",
+    "swr": "^0.2.0"
+  }
+}
